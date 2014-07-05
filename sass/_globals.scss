@@ -1,0 +1,56 @@
+/*
+* Globals
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, button {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	font-weight: 300;
+}
+
+//  IE11 fix
+main {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	border: 0;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}

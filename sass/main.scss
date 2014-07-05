@@ -1,0 +1,90 @@
+// @import "bourbon/bourbon";
+
+@import "base";
+@import "globals";
+
+// backgorund
+body {
+	color: #fff;
+	background: url(../../img/bg.png) #290946;
+	min-height: 100vh;
+	// @include display(flex);
+	display: flex;
+	flex-direction: column;
+}
+
+body:before {
+	content: "";
+	background-image: -o-linear-gradient(-44deg, $color-purple -30%, $color-blue 100%);
+	background-image: -moz-linear-gradient(-44deg, $color-purple -30%, $color-blue 100%);
+	background-image: -ms-linear-gradient(-44deg, $color-purple -30%, $color-blue 100%);
+	background-image: linear-gradient(-44deg, $color-purple -30%, $color-blue 100%);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .47;
+	z-index: -1;
+}
+
+// typography
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	line-height: 1;
+	margin: 0;
+	margin-top: 2.5rem;
+}
+
+.lead {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin: 1rem;
+}
+
+// inputs/buttons
+
+// container
+.container {
+	margin: 0 auto;
+}
+
+// stick demo to bottom
+.content {
+	// @include flex(1);
+	flex: 1;
+}
+
+// app wireframe demo
+.big-grey-block {
+	background: $color-gray-light;
+	height: 420px;
+	width: 900px;
+	max-width: 90%;
+	margin: 0 auto;
+	border-radius: 5px 5px 0 0;
+	border-top: 40px solid $color-gray;
+	border-right: 5px solid $color-gray;
+	border-left: 5px solid $color-gray;
+	box-shadow: 0 0 34px rgba(0,0,0,.4);
+	position: relative;
+	color: #111;
+}
+
+// browser controls 
+.browser-controls {
+	position: absolute;
+	top: -27px;
+	left: 10px;
+}
+.browser-controls div {
+	background: $color-orange;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	margin-right: 5px;
+	&:nth-child(2) { background: $color-green;  }
+	&:nth-child(3) { background: $color-yellow; }
+}
