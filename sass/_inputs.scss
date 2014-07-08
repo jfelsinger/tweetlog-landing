@@ -25,5 +25,12 @@ input {
 		position: absolute;
 		top: 15px;
 		left: 10px;
+		pointer-events: none;
+		@include transition(all .4s ease-in-out);
+	}
+
+	&.active label {
+		font-weight: 700;
+		@include transform(translateY(-40px));
 	}
 }
