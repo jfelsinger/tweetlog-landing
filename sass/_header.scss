@@ -7,7 +7,7 @@ header {
 .logo {
 	float: left;
 	@include hide-text;
-	@include retina-image("../../img/logo", 95px 29px);
+	@include retina-image("../../img/logo", 95px 29px, $retina-suffix: "@2x");
 	width: 95px;
 	height: 29px;
 }
@@ -16,7 +16,7 @@ header {
 .twitter {
 	float: right;
 	@include hide-text;
-	@include retina-image("../../img/twitter", 28px 21px);
+	@include retina-image("../../img/twitter", 28px 21px, $retina-suffix: "@2x");
 	width: 28px;
 	height: 21px;
 }
