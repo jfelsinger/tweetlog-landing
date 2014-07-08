@@ -15,4 +15,8 @@ header {
 // twitter-icon
 .twitter {
 	float: right;
+	@include hide-text;
+	@include retina-image("../../img/twitter", 28px 21px);
+	width: 28px;
+	height: 21px;
 }
