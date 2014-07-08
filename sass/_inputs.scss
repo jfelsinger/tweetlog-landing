@@ -1,0 +1,29 @@
+input {
+	line-height: 50px;
+	height: 50px;
+	border: 2px solid $color-white;
+	background: rgba(255,255,255, .07);
+	border-radius: 5px;
+	width: 250px;
+	color: $color-white;
+	font-size: 1rem;
+	padding: 0 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	margin-right: 10px;
+
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 8px rgba($color-white, .4);
+	}
+}
+
+.dynamic-label {
+	display: inline-block;
+	position: relative;
+
+	label {
+		position: absolute;
+		top: 15px;
+		left: 10px;
+	}
+}
