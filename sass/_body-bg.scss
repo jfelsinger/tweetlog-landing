@@ -1,0 +1,19 @@
+body {
+	color: #fff;
+	background: url(../../img/bg.png) #290946;
+	min-height: 100vh;
+	@include display(flex);
+	@include flex-direction(column);
+}
+
+body:before {
+	content: "";
+	@include linear-gradient(-44deg, $color-purple 0%, $color-blue 100%);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .47;
+	z-index: -1;
+}

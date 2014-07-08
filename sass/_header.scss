@@ -1,0 +1,14 @@
+// header
+header {
+	@include clearfix;
+}
+
+// logo
+.logo {
+	float: left;
+}
+
+// twitter-icon
+.twitter {
+	float: right;
+}

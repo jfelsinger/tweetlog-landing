@@ -1,0 +1,18 @@
+
+// container
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+
+
+// stick demo to bottom
+.content {
+	@include flex(1);
+	@include display(flex);
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+}
