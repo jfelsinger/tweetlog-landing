@@ -6,6 +6,10 @@ header {
 // logo
 .logo {
 	float: left;
+	@include hide-text;
+	@include retina-image("../../img/logo", 95px 29px);
+	width: 95px;
+	height: 29px;
 }
 
 // twitter-icon
