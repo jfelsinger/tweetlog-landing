@@ -10,4 +10,14 @@ button {
 	text-transform: uppercase;
 	font-weight: bold;
 	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	cursor: pointer;
+	@include transition(background .4s);
+
+	&:hover {
+		background: tint($color-orange, 5%);
+	}
+
+	&:focus {
+		outline: 0;
+	}
 }
