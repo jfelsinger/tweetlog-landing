@@ -33,6 +33,10 @@ input {
 		left: 10px;
 		pointer-events: none;
 		@include transition(all .4s ease-in-out);
+
+		@media(min-width: 524px) {
+			top: 15px;
+		}
 	}
 
 	&.active label {
