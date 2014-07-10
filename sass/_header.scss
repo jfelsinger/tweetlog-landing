@@ -8,8 +8,8 @@ header {
 .logo {
 	float: left;
 	@include hide-text;
-	@include retina-image("../../img/logo", 95px 29px, $retina-suffix: "@2x");
-	width: 95px;
+	@include retina-image("../../img/lg", 100px 29px, $retina-suffix: "@2x");
+	width: 100px;
 	height: 29px;
 }
 
