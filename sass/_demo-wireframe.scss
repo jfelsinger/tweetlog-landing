@@ -33,8 +33,20 @@
 }
 
 // frame content
-.body {
+.big-grey-block > .body {
 	@include display(flex);
+	margin-top: -30px;
+}
+
+// post title
+.title {
+	display: block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 10px 47px;
+	line-height: 1.5;
+	margin-top: 20px;
+	color: shade($color-gray, 50%);
 }
 
 // tweets
@@ -79,9 +91,13 @@
 	width: 50px;
 	right: -50px;
 
-	span {
-		display: inline-block;
+	span.active {
 		background: $color-green-dark;
+	}
+
+	span {
+		background: shade($color-gray-light, 20%);
+		display: inline-block;
 		color: $color-white;
 		padding: 2px 3px;
 		border-radius: 3px;
@@ -94,10 +110,15 @@
 	span:after {
 		content: "";
 		position: absolute;
-		@include triangle(6px, $color-green-dark, down);
+		@include triangle(6px, shade($color-gray-light, 20%), down);
 		border-top-width: 6px;
 		top: 100%;
 		left: 10px;
+	}
+
+	span.active:after {
+		@include triangle(6px, $color-green-dark, down);
+		border-top-width: 6px;
 	}
 }
 
@@ -105,6 +126,15 @@
 // comments
 .comments {
 	width: 25%;
+
+	.avatar img {
+		vertical-align: middle;
+	}
+
+	.avatar span {
+		vertical-align: middle;
+		font-weight: 700;
+	}
 
 	ul {
 		list-style: none;
