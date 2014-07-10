@@ -8,9 +8,10 @@ header {
 .logo {
 	float: left;
 	@include hide-text;
-	@include retina-image("../../img/lg", 100px 29px, $retina-suffix: "@2x");
-	width: 100px;
-	height: 29px;
+	@include retina-image("../../img/lg", 146px 42px, $retina-suffix: "@2x");
+	background-size: 146px 42px;
+	width: 146px;
+	height: 42px;
 }
 
 // twitter-icon
