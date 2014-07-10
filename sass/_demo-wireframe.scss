@@ -1,7 +1,6 @@
 // app wireframe demo
 .big-grey-block {
 	background: $color-gray-light;
-	height: 350px;
 	width: 900px;
 	max-width: 90%;
 	margin: 0 auto;
@@ -12,6 +11,10 @@
 	box-shadow: 0 0 34px rgba(0,0,0,.4);
 	position: relative;
 	color: #111;
+	
+	@media(min-width: 900px) {
+		height: 350px;
+	}
 }
 
 // browser controls 
@@ -51,10 +54,14 @@
 
 // tweets
 .tweets {
-	width: 75%;
 	list-style: none;
 	padding-left: 50px;
 	padding-right: 50px;
+	width: 100%;
+
+	@media(min-width: 900px) {
+		width: 75%;
+	}
 
 	li {
 		margin: 30px 0;
@@ -125,7 +132,12 @@
 
 // comments
 .comments {
-	width: 25%;
+	display: none;
+
+	@media(min-width: 900px) {
+		display: block;
+		width: 25%;
+	}
 
 	.avatar img {
 		vertical-align: middle;

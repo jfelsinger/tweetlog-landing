@@ -1,15 +1,21 @@
 input {
-	line-height: 50px;
-	height: 50px;
 	border: 2px solid $color-white;
 	background: rgba(255,255,255, .07);
 	border-radius: 5px;
-	width: 250px;
 	color: $color-white;
 	font-size: 1rem;
 	padding: 0 10px;
 	box-shadow: 0 0 5px rgba(0,0,0,.3);
-	margin-right: 10px;
+	margin-right: 5px;
+	height: 40px;
+	line-height: 40px;
+
+	@media (min-width: 524px) {
+		margin-right: 10px;
+		height: 50px;
+		line-height: 50px;
+		width: 250px;
+	}
 
 	&:focus {
 		outline: 0;
@@ -23,7 +29,7 @@ input {
 
 	label {
 		position: absolute;
-		top: 15px;
+		top: 12px;
 		left: 10px;
 		pointer-events: none;
 		@include transition(all .4s ease-in-out);
@@ -31,6 +37,11 @@ input {
 
 	&.active label {
 		font-weight: 700;
-		@include transform(translateY(-40px));
+		@include transform(translateY(-30px));
+
+
+		@media (min-width: 524px) {
+			@include transform(translateY(-40px));
+		}
 	}
 }
